@@ -1,10 +1,12 @@
-package techiteasy1121.models;
+package SecurityForSpringBoot.models;
 
 
 import java.util.HashSet;
 import java.util.Set;
 
-/*annotatie*/
+@Getter
+@Setter
+@Entity
 @Table(name = "users")
 public class User {
 

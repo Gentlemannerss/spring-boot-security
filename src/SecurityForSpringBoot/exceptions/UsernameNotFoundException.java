@@ -1,4 +1,4 @@
-package techiteasy1121.exceptions;
+package SecurityForSpringBoot.exceptions;
 
 public class UsernameNotFoundException extends RuntimeException {
     private static final long serialVersionUID = 1L;

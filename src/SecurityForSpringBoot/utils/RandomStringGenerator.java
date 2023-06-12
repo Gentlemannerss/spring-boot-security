@@ -1,4 +1,4 @@
-package techiteasy1121.utils;
+package SecurityForSpringBoot.utils;
 import java.util.Random;
 
 public class RandomStringGenerator {

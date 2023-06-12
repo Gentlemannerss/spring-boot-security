@@ -1,4 +1,4 @@
-package techiteasy1121.config;
+package SecurityForSpringBoot.config;
 
 
 /*

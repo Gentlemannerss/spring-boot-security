@@ -1,4 +1,4 @@
-package techiteasy1121.dtos;
+package SecurityForSpringBoot.payload;
 
 public class AuthenticationResponse {
 

@@ -1,4 +1,4 @@
-package techiteasy1121.utils;
+package SecurityForSpringBoot.utils;
 
 
 import java.security.Key;
@@ -11,7 +11,7 @@ import java.util.Map;
 public class JwtUtil {
 
     // De secret key moet minimaal 256 bits lang zijn, of grofweg 45 characters
-    private final static String SECRET_KEY = "/*vul hier je super geheime sleutel in*/";
+    private final static String SECRET_KEY = "012345678901234567890123456789012345678912345"; //Dit moet dus een random key zijn.
 
     private Key getSigningKey() {
         byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);

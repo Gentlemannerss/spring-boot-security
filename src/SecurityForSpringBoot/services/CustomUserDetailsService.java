@@ -1,21 +1,25 @@
-package techiteasy1121.services;
+package SecurityForSpringBoot.services;
 
+
+import SecurityForSpringBoot.dtos.UserDto;
+import SecurityForSpringBoot.models.Authority;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 
-
-/*annotatie*/
+@Service
 public class CustomUserDetailsService implements UserDetailsService {
 
-    /*inject userservice */
+    private final UserService userService;
 
-
+    public CustomUserDetailsService(UserService userService) {
+        this.userService = userService;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String username) {
         UserDto userDto = userService.getUser(username);
-
 
         String password = userDto.getPassword();
 

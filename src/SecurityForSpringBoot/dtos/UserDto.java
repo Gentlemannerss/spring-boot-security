@@ -1,4 +1,4 @@
-package techiteasy1121.dtos;
+package SecurityForSpringBoot.dtos;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import nl.novi.techiteasy1121.models.Authority;
@@ -12,7 +12,7 @@ public class UserDto {
     public Boolean enabled;
     public String apikey;
     public String email;
-    @JsonSerialize
+    @JsonSerialize //Mogelijk dat dit weg moet volgens de uitwerkingen van Novi.
     public Set<Authority> authorities;
 
     public String getUsername() {

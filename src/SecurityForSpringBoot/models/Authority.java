@@ -1,8 +1,10 @@
-package techiteasy1121.models;
+package SecurityForSpringBoot.models;
 
 import java.io.Serializable;
 
-/*annotatie*/
+@Entity
+@Getter
+@Setter
 @IdClass(AuthorityKey.class)
 @Table(name = "authorities")
 public class Authority implements Serializable {

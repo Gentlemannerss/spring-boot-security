@@ -1,4 +1,4 @@
-package techiteasy1121.models;
+package SecurityForSpringBoot.models;
 
 import java.io.Serializable;
 
